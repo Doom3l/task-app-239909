@@ -1,0 +1,10 @@
+name: "Test and Scan"
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  - name: "Scan"
+    uses: actions/checkout@v7
