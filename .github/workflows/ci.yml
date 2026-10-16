@@ -22,7 +22,7 @@ jobs:
       - name: "Install dependencies"
         run: pip install -r services/${{matrix.service}}/requirements.txt
       - shell: bash
-      - name: "Run tests"
+        name: "Run tests"
         run: pytest -rA services/${{matrix.service}}/tests | tee ${{matrix.service}}-test-report-${{matrix.python-version}}.txt
       - name: "Upload report"
         uses: actions/upload-artifact@v7
