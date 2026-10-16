@@ -6,5 +6,5 @@ on:
       - main
 
 jobs:
-  - name: "Scan"
-    uses: actions/checkout@v7
+  name: "Scan"
+  uses: actions/checkout@v7
